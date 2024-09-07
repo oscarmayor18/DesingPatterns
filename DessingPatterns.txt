@@ -1,0 +1,80 @@
+Es una serie de pasos para resolver un problema 
+- Patrones creacionales : Se centran en resolver problemas acerca de como crear instancias de las clases de 
+nuestra app.
+-Patrones Estrcturales : Aportan soluciones y estandares eficientes con respecto a las composiciones de las clases
+y estructuras de objetos, la herencia se utiliza para componer interfaces y definir formas de componer objetos para
+obtener nuevas funcionalidades.
+-Patrones de comportamiento : Se ocupan de la comunicacion entre objetos de clase. se utilizan para detectar la presencia
+de patrones de comunicacion ya presentes y pueden manipular estos patrones.
+estan relacionados con la comunicacion entre objetos
+
+=======================================================================
+EN JAVA NO EXISTE LA HERENCIA MULTIPLE
+=======================================================================
+una clase abstracta es una clase que no se puede instanciar directamente y está diseñada para ser extendida por otras clases.
+Las clases abstractas se utilizan para proporcionar una base común para otras clases,
+permitiendo compartir código y establecer un contrato que las clases derivadas deben seguir.
+=======================================================================
+Métodos Abstractos: Una clase abstracta puede contener métodos abstractos,
+ que son métodos sin una implementación en la clase abstracta misma.
+Las clases que extienden una clase abstracta deben proporcionar una implementación para estos métodos.
+=======================================================================
+PATRONES CREACIONALES 
+FACTORY - FACTORY METHOD
+
+=factory=
+se usa para crear instancias de objetos y son objetos que heredan de una clase padre y 
+cuando tienen muchos hijos
+
+=ABSTRACT FACTORY=
+Abstract Factory es un patrón de diseño creacional en programación orientada a objetos. Sus características principales son:
+
+Propósito es Proporcionar una interfaz para crear familias de objetos relacionados sin especificar sus clases concretas.
+Estructura: Define una interfaz abstracta para crear varios productos relacionados.
+Uso: Útil cuando un sistema debe ser independiente de cómo se crean, componen y representan sus productos.
+Ventajas: Promueve la coherencia entre productos, facilita el cambio de familias de productos, y soporta el principio de diseño "abierto/cerrado".
+Implementación: Normalmente involucra múltiples interfaces de fábrica y producto, junto con sus implementaciones concretas.
+
+=BUILDER=
+ permite construir objetos complejos paso a paso. Separa la construcción de un objeto complejo de su representación, 
+ permitiendo que el mismo proceso de construcción pueda crear diferentes representaciones.
+ 
+=Prototype=
+permite copiar objetos existentes sin hacer que el código dependa de sus clases específicas. Aquí te lo explico brevemente:
+
+Propósito Permite crear nuevos objetos duplicando un objeto existente (prototipo) en lugar de crearlo desde cero.
+Funcionamiento: Define una interfaz para crear un objeto clonándose a sí mismo.
+Uso: Es útil cuando la creación directa de un objeto es costosa o compleja.
+Ventajas: Reduce la necesidad de subclases de un creador como lo hace el patrón Factory.
+Permite añadir o eliminar objetos en tiempo de ejecución.
+Especifica nuevos objetos variando valores.
+Implementación: Generalmente implica un método clone() o copy().
+
+=SINGLETON=
+ Su propósito es garantizar que una clase tenga una única instancia y proporcionar un punto de acceso global a ella
+ . Vamos a explorar este patrón en detalle.
+ Constructor privado: Evita que la clase sea instanciada directamente desde fuera.
+Instancia estática: Mantiene la única instancia de la clase.
+Método de acceso global: Proporciona un punto de acceso global a la instancia única.
+Creación perezosa (lazy initialization): La instancia se crea solo cuando se solicita por primera vez.
+=======================================================================
+PATRONES ESTRUCTURALES
+
+=ADAPTER=
+permite que interfaces incompatibles trabajen juntas. Básicamente, actúa como un puente entre dos interfaces incompatibles. 
+Convertir la interfaz de una clase en otra interfaz que los clientes esperan.
+Hacer que clases con interfaces incompatibles trabajen juntas sin modificar su código fuente.
+Hay dos tipos principales de Adapter:
+Adapter de clase (usando herencia múltiple, no disponible en Java)
+Adapter de objeto (usando composición)
+
+=BRIDGE=
+se utiliza para separar la abstracción de su implementación, permitiendo que ambas puedan variar independientemente.
+
+=COMPOSITE=
+ permite componer objetos en estructuras de árbol para representar jerarquías de parte-todo.
+ Este patrón permite a los clientes tratar de manera uniforme tanto a los objetos individuales como a las composiciones de objetos.
+ 
+ =DECORATOR=
+ permite añadir funcionalidades a objetos existentes de forma dinámica sin alterar su estructura. 
+ Esto se logra envolviendo el objeto original en un objeto decorador.
