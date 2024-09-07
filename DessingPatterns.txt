@@ -78,3 +78,11 @@ se utiliza para separar la abstracción de su implementación, permitiendo que a
  =DECORATOR=
  permite añadir funcionalidades a objetos existentes de forma dinámica sin alterar su estructura. 
  Esto se logra envolviendo el objeto original en un objeto decorador.
+ 
+ =FACADE=
+ proporciona una interfaz simplificada a un sistema complejo de clases, biblioteca o framework. 
+ Esencialmente, actúa como una "fachada" o frente simplificado para un conjunto más grande y complejo de funcionalidades.
+
+=FLYWEIGHT=
+se utiliza para minimizar el uso de memoria o los costos computacionales al compartir la mayor cantidad posible de datos entre objetos similares.
+Es especialmente útil cuando se necesita una gran cantidad de objetos que tienen algunas partes de su estado en común.
