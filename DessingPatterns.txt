@@ -86,3 +86,7 @@ se utiliza para separar la abstracción de su implementación, permitiendo que a
 =FLYWEIGHT=
 se utiliza para minimizar el uso de memoria o los costos computacionales al compartir la mayor cantidad posible de datos entre objetos similares.
 Es especialmente útil cuando se necesita una gran cantidad de objetos que tienen algunas partes de su estado en común.
+
+=PROXY=
+proporciona un sustituto o marcador de posición para otro objeto para controlar el acceso a este. El proxy puede actuar como intermediario,
+añadiendo funcionalidad adicional sin cambiar el código del objeto original.
