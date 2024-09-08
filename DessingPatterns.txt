@@ -90,3 +90,12 @@ Es especialmente útil cuando se necesita una gran cantidad de objetos que tiene
 =PROXY=
  proporciona un sustituto o marcador de posición para otro objeto para controlar el acceso a este. El proxy puede actuar como intermediario,
 añadiendo funcionalidad adicional sin cambiar el código del objeto original.
+
+=======================================================================
+PATRON DE COMPORTAMIENTO
+
+=CHAIN OF RESPONSABILITY=
+permite pasar solicitudes a lo largo de una cadena de manejadores.
+Al recibir una solicitud, cada manejador decide si la procesa o la pasa al siguiente manejador en la cadena.
+
+ 
