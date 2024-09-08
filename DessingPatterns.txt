@@ -88,5 +88,5 @@ se utiliza para minimizar el uso de memoria o los costos computacionales al comp
 Es especialmente útil cuando se necesita una gran cantidad de objetos que tienen algunas partes de su estado en común.
 
 =PROXY=
-proporciona un sustituto o marcador de posición para otro objeto para controlar el acceso a este. El proxy puede actuar como intermediario,
+ proporciona un sustituto o marcador de posición para otro objeto para controlar el acceso a este. El proxy puede actuar como intermediario,
 añadiendo funcionalidad adicional sin cambiar el código del objeto original.
