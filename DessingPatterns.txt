@@ -98,4 +98,6 @@ PATRON DE COMPORTAMIENTO
 permite pasar solicitudes a lo largo de una cadena de manejadores.
 Al recibir una solicitud, cada manejador decide si la procesa o la pasa al siguiente manejador en la cadena.
 
- 
+=COMMAND=
+ Command se utiliza para encapsular una solicitud como un objeto, permitiéndote parametrizar clientes con diferentes solicitudes,
+ encolar o registrar solicitudes, y soportar operaciones reversibles.
